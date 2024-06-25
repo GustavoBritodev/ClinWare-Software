@@ -1,0 +1,96 @@
+
+
+h1, h2 {
+    color: #333;
+}
+
+.radio-group {
+    margin-bottom: 20px;
+}
+
+.radio-group label {
+    margin-right: 20px;
+}
+
+.date-inputs {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.date-inputs label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    --color: #560bad;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+   }
+   
+   button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   button:hover {
+    color: #fff;
+   }
+   
+   button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   button:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   button:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+   }
+
+#report {
+    margin-top: 20px;
+}
+
+#report-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#report-table th, #report-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#report-table th {
+    background-color: #f4f4f4;
+}
+
+.export-buttons button {
+    margin-right: 10px;
+}

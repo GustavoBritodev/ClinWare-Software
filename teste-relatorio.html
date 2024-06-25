@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Agendamentos</title>
+    <link rel="stylesheet" href="teste-relatorio.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Relatório de Agendamentos</h1>
+        <form id="report-form">
+            <h2>Selecione o Período para o Relatório</h2>
+            <div class="radio-group">
+                <label><input type="radio" name="period" value="today"> Hoje</label>
+                <label><input type="radio" name="period" value="yesterday"> Ontem</label>
+                <label><input type="radio" name="period" value="last7"> Últimos 7 dias</label>
+                <label><input type="radio" name="period" value="last30"> Últimos 30 dias</label>
+                <label><input type="radio" name="period" value="custom"> Personalizado</label>
+            </div>
+            <div id="custom-date" class="date-inputs">
+                <label>Data de Início: <input type="date" id="start-date"></label>
+                <label>Data de Término: <input type="date" id="end-date"></label>
+            </div>
+            <button type="button" id="generate-report">Gerar Relatório</button>
+        </form>
+        <div id="report">
+            <h2>Relatório de Agendamentos</h2>
+            <p id="report-period"></p>
+            <table id="report-table">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Paciente</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aqui vai ficar as rows dinamicas papi -->
+                </tbody>
+            </table>
+            <div id="totals">
+                <p>Pacientes Presentes: <span id="present-count">0</span></p>
+                <p>Pacientes Ausentes: <span id="absent-count">0</span></p>
+            </div>
+            <div class="export-buttons">
+                <button>Exportar para PDF</button>
+                <!-- Tem que adicionar a linguagem nessa bomba -->
+                
+                <button>Exportar para Excel</button>
+            </div>
+        </div>
+    </div>
+    <script src="teste-relatorio.js"></script>
+</body>
+</html>

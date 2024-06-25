@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+.calendar {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  background: #fff;
+  justify-content: space-between;
+}
+
+.calendar header{
+  background-color: #9862CA;
+  font-size: 70px;
+  font-weight: 900;
+  width: 100%;
+  text-align: center;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .calendar header span{
+  cursor: pointer;
+}
+
+.calendar header span:last-of-type{
+  margin-left: 35px;
+}
+
+.calendar header span:last-of-type:hover svg path{
+  stroke: #d0d0d0;
+}
+
+.calendar header span:first-of-type {
+  margin-right: 35px;
+}
+
+.calendar header span:first-of-type:hover svg path {
+  stroke: #d0d0d0;
+}
+
+.calendar header span svg {
+  display: block;
+  margin:auto;
+}
+
+.calendar header p span {
+  margin: 0 !important;
+} */
+
+.calendar main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.calendar footer {
+  width: 100%;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 7px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  text-align: center;
+  font-size: 20px;
+  width: 60px;
+  height: 60px;
+}
+
+th {
+  font-weight: 300;
+  
+}
+
+td {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+td.teste::after {
+  content: " ";
+  background: #8D86C9;
+  width: 24px;
+  height: 12px;
+  position: absolute;
+  margin-top: 25px;
+  margin-left: -23px;
+  border-radius: 5px;
+}
+
+td.outherMount {
+  color: #918f9b;
+}
+
+tr:first-of-type th {
+  padding-bottom: 30px;
+}
+
+td:hover {
+  background: rgba(0,0,0,0.2);
+}
+
+.titulo {
+  text-align: center;
+  font-size: 41px;
+  font-weight: 600;
+  color: #9f01ea;
+  text-transform: uppercase;
+  border-bottom: 2px solid rgb(125, 65, 221);
+  margin-left: 20px;
+  width: 150px;
+  margin: 0 40%;
+}
+  
+.container{
+    margin-top: 13%;
+    margin-left: 600px;
+    max-width: 1000px;
+    background: #fff;
+    width: 800px;
+    padding: 25px 40px 10px 40px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  }
+  .container .text{
+    text-align: center;
+    font-size: 41px;
+    font-weight: 600;
+    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .container form{
+    padding: 30px 0 0 0;
+  }
+  .container form .form-row{
+    display: flex;
+    margin: 32px 0;
+    justify-content: center;
+  }
+  form .form-row .input-data{
+    width: 100%;
+    height: 40px;
+    margin: 0 20px;
+    position: relative;
+  }
+  form .form-row .textarea{
+    height: 70px;
+  }
+  .input-data input,
+  .textarea textarea{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid rgba(0,0,0, 0.12);
+  }
+  .input-data input:focus ~ label, .textarea textarea:focus ~ label,
+  .input-data input:valid ~ label, .textarea textarea:valid ~ label{
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #3498db;
+  }
+  .textarea textarea{
+    resize: none;
+    padding-top: 10px;
+  }
+  .input-data label{
+    position: absolute;
+    pointer-events: none;
+    bottom: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  .textarea label{
+    width: 100%;
+    bottom: 40px;
+    background: #fff;
+  }
+  .input-data .underline{
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+  }
+  .input-data .underline:before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #3498db;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+  }
+  .input-data input:focus ~ .underline:before,
+  .input-data input:valid ~ .underline:before,
+  .textarea textarea:focus ~ .underline:before,
+  .textarea textarea:valid ~ .underline:before{
+    transform: scale(1);
+  }
+  .submit-btn .input-data{
+    margin-left: 260px;
+    overflow: hidden;
+    height: 45px!important;
+    width: 25%!important;
+  }
+  .submit-btn .input-data .inner{
+    
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+    transition: all 0.4s;
+  }
+  .submit-btn .input-data:hover .inner{
+    left: 0;
+  }
+  .submit-btn .input-data input{
+     
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+
+  }
+
+
+ .formconta{
+  display: grid;
+  justify-content: center;
+justify-items: center;
+  font-size: 20px;
+ }
+ .inputconta{
+  border-radius: 10px;
+  padding: 10px;
+  width: 100vh;
+  border: 3px solid #A35BE6;
+ }
+
+ .imgconta{
+  height: 200px;
+  width: 200px;
+  border: 3px solid #A35BE6;
+  border-radius: 50%;
+  margin: 10% 35%;
+ }
+
+ .AgendamentosFeitos{
+
+    display: grid;
+    margin-left: 251px;
+    justify-items: center;
+    justify-content: center;
+  
+ }
+ .lblform{
+  width: 700px;
+ }
+
+ .PacienteFeito{
+  background-color: #250a32;
+    border: 10px solid #57296c;
+    height: 160px;
+    width: 762px;
+    border-radius: 10px;
+    padding-top: 9px;
+    margin-top: 22px;
+    margin-left: 10px;
+  
+ }
+ .Feitos{
+  font-size: 20px;
+  font-family: "Rubik", sans-serif;
+
+  color: #fff;
+ }
+ .OKKK{
+ 
+    padding-bottom: 25px;
+ }
+
+
+ 
+
+h1, h2 {
+  color: #333;
+}
+
+.radio-group {
+  margin-bottom: 20px;
+}
+
+.radio-group label {
+  margin-right: 20px;
+}
+
+.date-inputs {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.date-inputs label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  --color: #560bad;
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color .5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color);
+ }
+ 
+ button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+ }
+ 
+ button:hover {
+  color: #fff;
+ }
+ 
+ button:before {
+  top: 100%;
+  left: 100%;
+  transition: all .7s;
+ }
+ 
+ button:hover:before {
+  top: -30px;
+  left: -30px;
+ }
+ 
+ button:active:before {
+  background: #3a0ca3;
+  transition: background 0s;
+ }
+
+#report {
+  margin-top: 20px;
+}
+
+#report-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#report-table th, #report-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+#report-table th {
+  background-color: #f4f4f4;
+}
+
+.export-buttons button {
+  margin-right: 10px;
+}
+
+
+  @media (max-width: 700px) {
+    .container .text{
+      font-size: 30px;
+    }
+    .container form{
+      padding: 10px 0 0 0;
+    }
+    .container form .form-row{
+      display: block;
+    }
+    form .form-row .input-data{
+      margin: 35px 0!important;
+    }
+    .submit-btn .input-data{
+      width: 40%!important;
+    }
+  }
+
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cta {
+      display: flex;
+      padding: 10px 45px;
+      text-decoration: none;
+      font-family: "Rubik", sans-serif;
+      font-size: 40px;
+      color: white;
+      background: #6225E6;
+      transition: 1s;
+      box-shadow: 6px 6px 0 black;
+      transform: skewX(-15deg);
+  }
+  
+  .cta:focus {
+     outline: none; 
+  }
+  
+  .cta:hover {
+      transition: 0.5s;
+      box-shadow: 10px 10px 0 #FBC638;
+  }
+/*   
+  .cta span:nth-child(2) {
+      transition: 0.5s;
+      margin-right: 0px;
+  }
+  
+  .cta:hover  span:nth-child(2) {
+      transition: 0.5s;
+      margin-right: 45px;
+  }
+  
+    span {
+      transform: skewX(15deg) 
+    }
+  
+    span:nth-child(2) {
+      width: 20px;
+      margin-left: 30px;
+      position: relative;
+      top: 12%;
+    } */
+    
+  /**************SVG****************/
+  
+  path.one {
+      transition: 0.4s;
+      transform: translateX(-60%);
+  }
+  
+  path.two {
+      transition: 0.5s;
+      transform: translateX(-30%);
+  }
+  
+  .cta:hover path.three {
+      animation: color_anim 1s infinite 0.2s;
+  }
+  
+  .cta:hover path.one {
+      transform: translateX(0%);
+      animation: color_anim 1s infinite 0.6s;
+  }
+  
+  .cta:hover path.two {
+      transform: translateX(0%);
+      animation: color_anim 1s infinite 0.4s;
+  }
+  
+  /* SVG animations */
+  
+  @keyframes color_anim {
+      0% {
+          fill: white;
+      }
+      50% {
+          fill: #FBC638;
+      }
+      100% {
+          fill: white;
+      }
+  }
+
+  

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/recepcionista.css">
+    <link rel="stylesheet" href="../css/teste3.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+          
+        .AgendamentoFeitos {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .botaoreal {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 20px;
+            transition: background-color 0.5s ease;
+            height: 50px;
+            border-radius: 8px;
+        }
+
+
+        .botaoreal:hover {
+            background-color: #2980b9;
+
+        }
+
+        .botaofalso1 {
+            background-color: #eb0900;
+            color: white;
+            border: none;
+            margin-top: 5px;
+            padding: 10px 20px;
+            font-size: 20px;
+            transition: background-color 0.5s ease;
+            height: 50px;
+            border-radius: 8px;
+        }
+
+
+        .botaofalso1:hover {
+            background-color: #d30800;
+
+        }
+
+        botaofalso
+        /* @keyframes glow {
+  0% {
+    background-color: #3498db;
+  }
+  50% {
+    background-color: #2980b9;
+  }
+  100% {
+    background-color: #3498db;
+  }
+}
+
+.botaoreal {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  animation: glow 1.5s infinite;
+}
+
+.botaoreal:hover {
+  animation: none; /* Para parar a animação quando o mouse estiver sobre o botão 
+  background-color: #2980b9
+} */
+
+
+        .miniAgendamento {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 100%;
+            border: 2.5px solid grey;
+            padding: 1.513em;
+        }
+
+        .card {
+            max-width: 100%;
+            width: 100em;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 1em;
+            justify-content: space-between;
+        }
+
+        .info {}
+        
+        .btns {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: fit-content;
+        }
+
+        h3 {
+            margin-left: 5%;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: #333;
+        }
+
+        .card p {
+            margin-bottom: 8px;
+            color: #2b1165;
+        }
+
+        select {
+            font-size: 0.76em;
+            padding: 10px;
+            width: 200px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .textoradio {
+            display: inline-flex;
+        }
+
+
+
+        input[type="radio"] {
+            /* Add if not using autoprefixer */
+            -webkit-appearance: none;
+            /* Remove most all native input styles */
+            appearance: none;
+            /* For iOS < 15 */
+
+            /* Not removed via appearance */
+            margin: 0;
+
+            font: inherit;
+            color: currentColor;
+            width: 1.15em;
+            height: 1.15em;
+            border: 0.15em solid currentColor;
+            border-radius: 50%;
+            transform: translateY(-0.075em);
+
+            display: grid;
+            place-content: center;
+        }
+
+        input[type="radio"]::before {
+            content: "";
+            width: 0.65em;
+            height: 0.65em;
+            border-radius: 50%;
+            transform: scale(0);
+            transition: 120ms transform ease-in-out;
+            box-shadow: inset 1em 1em var(--form-control-color);
+            /* Windows High Contrast Mode */
+            background-color: CanvasText;
+        }
+
+        input[type="radio"]:checked::before {
+            transform: scale(1);
+        }
+
+        input[type="radio"]:focus {
+            /* outline: max(2px, 0.15em) solid currentColor; */
+            outline-offset: max(2px, 0.15em);
+        }
+
+        .radioo {
+            margin: 8px;
+            display: inline-flex;
+        }
+        form {
+            min-width: 35%;
+            border: 3px outset #2d3242;
+            border-radius: 10px;     
+  input[type=search] {
+    border: 1px solid white;
+    box-sizing:border-box;
+    font-size:1.2em;
+    height:2em;
+    margin-left: 0vw;
+    outline:solid #fc0 0;
+    padding:.5em;
+    transition:all 2s ease-in;
+    width:30vw;
+    min-width: 30vw;
+    
+  }
+  
+}
+.bibi-search{
+    margin-left: 7px;
+    margin-right: -4px;
+}
+
+    </style>
+</head>
+<body id="body-pd">
+    <header class="header" id="header">
+        <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+    </header>
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div>
+                <a href="#" class="nav_logo"> <i class='bx bx-layer nav_logo-icon'></i> <span class="nav_logo-name">ClinWare</span> </a>
+                <div class="nav_list">
+                    <a href="medico_prontuario.php" class="nav_link active"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Prontuario</span> </a>
+                    <a href="medico-agendados.php" class="nav_link"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Agendamento</span> </a>
+                    <a href="medico-agenda-historico.php" class="nav_link"> <i class="bi bi-clock-history"></i> <span class="nav_name">Histórico de agendamentos</span> </a>
+                    <a href="medico_conta.php" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Conta</span> </a>
+                </div>
+                <a href="login.php" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">SAIR</span> </a>
+            </div>
+        </nav>
+    </div>
+
+    <main class="AgendamentosFeitos">
+        <h1 class="OKKK">Histórico de Agendamentos</h1>
+        <form>
+            <i class="bi bi-search"></i>
+            <input type="search" placeholder="Pesquisar...">
+        </form>
+        <h4>Filtrar por 
+            <select id="sortSelect">
+                <option value="a-z">De A-Z</option>
+                <option value="antigo-atual">Recentes</option>
+                <option value="autual-antigo">Antigos</option>
+                <option value="horario">Horario</option>
+            </select>
+        </h4>
+        <div id="conteudo1" class="miniAgendamento">
+            <div class='card'>
+                <div class="info">
+                    <h3>Dados do Agendamento </h3>
+                    <p>Nome do médico: Ganu </p>
+                    <p>Nome do paciente: AGGAHGVAGH</p>
+                    <p>Sexo do paciente: MASCULINO</p>
+                    <p>Horário marcado: 10: 40</p>
+                </div>
+                <div class="btns">
+                    <button class='botaoreal'>Iniciar consulta</button>
+                    <button class='botaofalso1'>Apagar consulta</button>
+                </div>
+            </div>
+        </div>
+        <div id="conteudo2" class="miniAgendamento">
+            <div class='card'>
+                <div class="info">
+                    <h3>Dados do Agendamento </h3>
+                    <p>Nome do médico: Ganu </p>
+                    <p>Nome do paciente: AGGAHGVAGH</p>
+                    <p>Sexo do paciente: MASCULINO</p>
+                    <p>Horário marcado: 10: 40</p>
+                </div>
+                <div class="btns">
+                    <button class='botaoreal'>Iniciar consulta</button>
+                    <button class='botaofalso1'>Apagar consulta</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="notifications" id="notifications"></div>
+    <div class="buttons">
+        <button id="success">Success</button>
+        <button id="error">Error</button>
+        <button id="warning">Warning</button>
+        <button id="info">Info</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

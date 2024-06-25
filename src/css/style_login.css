@@ -1,0 +1,53 @@
+main {
+    width: 767px;
+height: 591px;
+flex-shrink: 0;
+    border-radius: 27px;
+background: #D9D9D9;
+box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.email,
+.senha,
+#Enviar{
+    width: 547px;
+    height: 49px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-left: 13%;
+    margin-bottom: 32px;
+
+}
+
+body {
+    background-color: #6615cd;
+    display: flex;
+    justify-content: center;
+    margin: 5% 0;
+}
+
+.cargo {
+    display: flex;
+    color: #000;
+    font-family: "Rubik", sans-serif;
+    font-size: 26px;
+font-weight: 600;
+line-height: normal;
+}
+
+
+#medic,
+#enf,
+#recep {
+    width: 79px;
+height: 30px;
+flex-shrink: 0;
+fill: #FFF;
+stroke-width: 1px;
+stroke: #000;
+margin-bottom: 10%;
+
+}

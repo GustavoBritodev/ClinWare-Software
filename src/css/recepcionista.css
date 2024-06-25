@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  list-style: none;
+  max-width: 100%;
+  text-decoration: none;
+}
+.calendar {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  background: #fff;
+  justify-content: space-between;
+  margin-top: -6%;
+  margin-bottom: -50px;
+}
+
+.calendar header{
+  background-color: #9862CA;
+  font-size: 70px;
+  font-weight: 900;
+  width: 300vh;
+  height: 100%;
+  text-align: center;
+  /* padding-top: 40px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar header span{
+  cursor: pointer;
+}
+
+.calendar header span:last-of-type{
+  margin-left: 35px;
+}
+
+.calendar header span:last-of-type:hover svg path{
+  stroke: #d0d0d0;
+}
+
+.calendar header span:first-of-type {
+  margin-right: 35px;
+}
+
+.calendar header span:first-of-type:hover svg path {
+  stroke: #d0d0d0;
+}
+
+.calendar header span svg {
+  display: block;
+  margin:auto;
+}
+
+.calendar header p span {
+  margin: 0 !important;
+}
+
+.calendar main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.calendar footer {
+  width: 100%;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 7px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  text-align: center;
+  font-size: 20px;
+  width: 60px;
+  height: 60px;
+}
+
+th {
+  font-weight: 300;
+  
+}
+
+td {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+td.teste::after {
+  content: " ";
+  background: #8D86C9;
+  width: 24px;
+  height: 12px;
+  position: absolute;
+  margin-top: 25px;
+  margin-left: -23px;
+  border-radius: 5px;
+}
+
+td.outherMount {
+  color: #918f9b;
+}
+
+tr:first-of-type th {
+  padding-bottom: 30px;
+}
+
+td:hover {
+  background: rgba(0,0,0,0.2);
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+  
+.container{
+    margin-top: 7%;
+    margin-left: 300px;
+    max-width: 1000px;
+    background: #fff;
+    width: 1200px;
+    height: 900px;
+    padding: 25px 40px 10px 40px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .container .text{
+    text-align: center;
+    font-size: 41px;
+    font-weight: 600;
+    color: #9f01ea;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgb(125, 65, 221);
+    margin-left: 20px;
+  
+    
+  }
+  .container form{
+    padding: 30px 0 0 0;
+  }
+  .container form .form-row{
+    display: flex;
+    margin: 32px 0;
+    justify-content: center;
+  }
+  form .form-row .input-data{
+    width: 100%;
+    height: 40px;
+    margin: 0 20px;
+    position: relative;
+  }
+  form .form-row .textarea{
+    height: 70px;
+  }
+  .input-data input,
+  .textarea textarea{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid rgba(0,0,0, 0.12);
+    text-transform: uppercase;
+  }
+  .input-data input:focus ~ label, .textarea textarea:focus ~ label,
+  .input-data input:valid ~ label, .textarea textarea:valid ~ label{
+    transform: translateY(-40px);
+    font-size: 14px;
+    color: #3498db;
+  }
+  label {
+    text-transform: uppercase;
+  }
+  .textarea textarea{
+    resize: none;
+    padding-top: 10px;
+  }
+  .input-data label{
+    position: absolute;
+    pointer-events: none;
+    bottom: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+  }
+  .textarea label{
+    width: 100%;
+    bottom: 40px;
+    background: #fff;
+  }
+  .input-data .underline{
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+  }
+  .input-data .underline:before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #3498db;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+    border: none;
+  }
+  .input-data input:focus ~ .underline:before,
+  .input-data input:valid ~ .underline:before,
+  .textarea textarea:focus ~ .underline:before,
+  .textarea textarea:valid ~ .underline:before{
+    transform: scale(1);
+    border: none;
+  }
+  .submit-btn .input-data{
+    margin-left: 260px;
+    overflow: hidden;
+    height: 45px!important;
+    border: none;
+    width: 25%!important;
+  }
+  .submit-btn .input-data .inner{
+    
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    border: none;
+    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+    transition: all 0.4s;
+  }
+  .submit-btn .input-data:hover .inner{
+    left: 0;
+  }
+  .submit-btn .input-data input{
+     
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+  }
+
+  .agen-feitos {
+    background-color: #E0CEF0;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 4px 4px rgba(0,0,0,0.25);
+  }
+
+  .doutor-paciente{
+    display: flex;
+    gap: 20px;
+  }
+
+    .titulo-agendamento{
+      text-transform: uppercase;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+    gap: 20px;
+  }
+  h3 {
+    margin-left: 40%;
+  }
+  @media (max-width: 700px) {
+    .container .text{
+      font-size: 30px;
+    }
+    .container form{
+      padding: 10px 0 0 0;
+    }
+    .container form .form-row{
+      display: block;
+    }
+    form .form-row .input-data{
+      margin: 35px 0!important;
+    }
+    .submit-btn .input-data{
+      width: 40%!important;
+    }
+  }

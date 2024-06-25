@@ -1,0 +1,134 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Rubik", sans-serif;
+}
+
+body{
+    height: 100%;
+
+ }
+
+ nav.menu-lateral {
+    width: 80px;
+    height: 100%;
+    background-color: rgba(128,63,187, 1);
+    padding: 40px 0 0 1%;
+    box-shadow: 3px 0 0 rgba(128,63,187, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .4s;
+ }
+
+ nav.menu-lateral.abrir{
+    width: 300px;
+
+
+ }
+
+ .menu {
+    width: 100%;
+    padding-left: 10px;
+
+ }
+
+.menu > i {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+ }
+
+ ul {
+    height: 100%;
+    list-style-type: none;
+  
+ }
+
+ ul li.item-menu{
+ 
+    transition: 0.4s;
+
+ }
+ ul li.item-menu-medico{
+   height: 80px;
+    transition: 0.4s;
+
+ }
+ ul li.ativo{
+      background-color: #9862CA;
+ }
+ ul li.item-menu-medico:hover{
+
+    background-color: #9862CA; 
+ }
+ 
+ ul li.item-menu:hover{
+       background-color: #9862CA; 
+ }
+
+ ul  li.item-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 20px 4%;
+    display: flex;
+    line-height: 40px;
+    width: 300px;
+    height: 20%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+ }
+
+ ul  li.item-menu-medico a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 20px 4%;
+    display: flex;
+    line-height: 40px;
+    width: 300px;
+    height: 20%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+ }
+
+ ul  li.item-menu a .txt-link{
+    margin-left: 70px;
+    transition: 0.5s;
+    opacity: 0;
+ }
+ ul  li.item-menu-medico a .txt-link{
+    margin-left: 70px;
+    transition: 0.5s;
+    opacity: 0;
+ }
+ 
+ nav.menu-lateral.abrir .txt-link{
+    margin-left: 40px;
+    opacity: 1;
+
+ }
+
+ ul  li.item-menu a .icon > i{
+    font-size: 30px;
+ }
+
+ ul  li.item-menu-medico a .icon > i{
+    font-size: 30px;
+ }
+
+ .bottom-aside {
+   margin-top: 30%;
+ 
+ }
+
+ .bottom-item {
+   margin-bottom: -34px;
+ }
